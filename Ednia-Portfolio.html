@@ -1,0 +1,160 @@
+<!--
+File: index.html
+Project: Ednia Ahmed Mohamed - Portfolio (English content)
+How to use:
+1. Save this file as `index.html` on your computer.
+2. Create a new GitHub repository (e.g. `edniahme-portfolio` or `username.github.io`).
+3. Upload this `index.html` file (and any assets you add later) to the repository.
+4. In GitHub: Settings -> Pages -> select branch `main` (or `master`) and folder `/root` -> Save.
+   After a minute the site will be available at:
+   - If repo name = `username.github.io`: https://<your-github-username>.github.io/
+   - Otherwise: https://<your-github-username>.github.io/<repo-name>/
+
+You can edit the text directly inside this file (About, Projects, contact email) and re-upload to update.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ednia Ahmed Mohamed — Graphic Designer</title>
+  <meta name="description" content="Portfolio of Ednia Ahmed Mohamed — Graphic Designer specializing in video creation and motion graphics.">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#7dd3fc;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;margin:0;background:linear-gradient(180deg,#1e8e8e 0%, #bfcbd7 60%);color:#e6eef6;-webkit-font-smoothing:antialiased}
+    .container{max-width:980px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:16px;align-items:center}
+    .avatar{width:76px;height:76px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;color:#26677d;font-weight:700;font-size:20px}
+    h1{margin:0;font-size:22px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+
+    main{margin-top:28px;display:grid;grid-template-columns:1fr 340px;gap:20px}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6);backdrop-filter:blur(6px)}
+
+    .hero{display:flex;flex-direction:column;gap:16px}
+    .role{color:var(--accent);font-weight:600}
+    .about{color:var(--muted)}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+
+    .projects{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+    .proj{padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border:1px solid rgba(255,255,255,0.03)}
+    .proj h4{margin:0 0 6px;font-size:15px}
+    .proj p{margin:0;color:var(--muted);font-size:13px}
+
+    aside .contact-info{display:flex;flex-direction:column;gap:8px}
+    a.cta{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#60a5fa);color:#042a35;font-weight:700;text-decoration:none}
+
+    footer{text-align:center;margin-top:28px;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:880px){main{grid-template-columns:1fr}aside{order:-1} .projects{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">EA</div>
+        <div>
+          <h1>Ednia Ahmed Mohamed</h1>
+          <p class="lead">Graphic Designer — Video Creator</p>
+        </div>
+      </div>
+      <nav>
+        <a class="cta" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="card hero">
+          <div>
+            <div class="role">Hi — I'm Ednia</div>
+            <h2 style="margin:8px 0 0">Graphic Designer focused on video creation & motion graphics</h2>
+            <p class="about">I craft visually engaging videos and motion graphics that help brands tell their story. I combine thoughtful design with efficient production workflows to deliver projects on time and with high polish.</p>
+          </div>
+
+          <div>
+            <h3 style="margin:14px 0 8px">Skills</h3>
+            <div class="skills">
+              <span class="skill">Video Production</span>
+              <span class="skill">Motion Graphics</span>
+              <span class="skill">Adobe After Effects</span>
+              <span class="skill">Adobe Premiere Pro</span>
+              <span class="skill">Graphic Design</span>
+            </div>
+          </div>
+
+          <div>
+            <h3 style="margin:14px 0 8px">Selected Projects</h3>
+            <div class="projects">
+              <article class="proj">
+                <h4>Promo Video — Local Brand</h4>
+                <p>Short promotional piece focused on product storytelling and motion typography.</p>
+              </article>
+
+              <article class="proj">
+                <h4>Social Series — Clips</h4>
+                <p>Series of short-form videos optimized for social channels with strong visual hooks.</p>
+              </article>
+
+              <article class="proj">
+                <h4>Explainer Animation</h4>
+                <p>Concise animated explainer that communicates complex ideas clearly.</p>
+              </article>
+
+              <article class="proj">
+                <h4>Branding & Visuals</h4>
+                <p>Visual identity assets and motion-ready templates for ongoing use.</p>
+              </article>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3 style="margin-top:0">How I work</h3>
+          <p class="about">I prefer a clear brief, a few iterative reviews, and delivering assets in publish-ready formats. I can handle end-to-end video production or collaborate with your team on specific stages like motion design or editing.</p>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0">Contact</h3>
+          <div class="contact-info">
+            <div>Email: <a href="mailto:edniahme456@gmail.com">edniahme456@gmail.com</a></div>
+            <div>Availability: Freelance / Contract</div>
+            <div style="margin-top:8px"><a class="cta" href="mailto:edniahme456@gmail.com">Email Me</a></div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3 style="margin-top:0">Download Resume</h3>
+          <p class="about">Add your resume to the repository as <code>resume.pdf</code> and link it here later.</p>
+          <a class="cta" href="#" onclick="alert('Add resume.pdf to the repo and update this link.')">How to add</a>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>Made by Ednia Ahmed Mohamed • <a href="mailto:edniahme456@gmail.com" style="color:inherit">edniahme456@gmail.com</a></div>
+    </footer>
+  </div>
+
+  <script>
+    // small utility: change avatar initials if name is changed in HTML
+    (function(){
+      try{
+        const name = 'Ednia Ahmed Mohamed';
+        const initials = name.split(' ').map(s=>s[0]).slice(0,2).join('').toUpperCase();
+        document.querySelector('.avatar').textContent = initials;
+      }catch(e){/* ignore */}
+    })();
+  </script>
+</body>
+</html>
